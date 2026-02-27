@@ -55,6 +55,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -77,6 +78,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -96,6 +98,20 @@
 
   <ItemGroup>
     <None Include="shaders.hlsl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClInclude Include="include\directx\d3dx12.h" />
+    <ClInclude Include="include\directx\d3dx12_barriers.h" />
+    <ClInclude Include="include\directx\d3dx12_check_feature_support.h" />
+    <ClInclude Include="include\directx\d3dx12_core.h" />
+    <ClInclude Include="include\directx\d3dx12_default.h" />
+    <ClInclude Include="include\directx\d3dx12_pipeline_state_stream.h" />
+    <ClInclude Include="include\directx\d3dx12_property_format_table.h" />
+    <ClInclude Include="include\directx\d3dx12_render_pass.h" />
+    <ClInclude Include="include\directx\d3dx12_resource_helpers.h" />
+    <ClInclude Include="include\directx\d3dx12_root_signature.h" />
+    <ClInclude Include="include\directx\d3dx12_state_object.h" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
